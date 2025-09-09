@@ -1,4 +1,7 @@
 
+using System.Reflection;
+using TaskForge.Api.Services;
+
 namespace TaskForge.Api
 {
     public class Program
@@ -12,7 +15,15 @@ namespace TaskForge.Api
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                options.IncludeXmlComments(xmlPath);
+            });
+            builder.Services.AddSingleton<ITaskService, TaskService>();
+            builder.Services.AddMemoryCache();
+            builder.Services.AddHttpClient();
 
             var app = builder.Build();
 
@@ -26,7 +37,6 @@ namespace TaskForge.Api
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
