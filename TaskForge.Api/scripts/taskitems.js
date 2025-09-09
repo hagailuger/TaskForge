@@ -1,0 +1,28 @@
+
+db.taskitems.insertMany([
+    { Title: "Buy groceries", Description: "Milk, eggs, bread", IsDone: false, Priority: 1, Tags: ["home", "shopping"], DueDate: new Date("2025-09-10T12:00:00Z") },
+    { Title: "Finish project report", Description: "Complete final draft", IsDone: true, Priority: 2, Tags: ["work"], DueDate: new Date("2025-09-12T09:00:00Z") },
+    { Title: "Clean the garage", Description: "Clear space for bikes", IsDone: false, Priority: 3, Tags: ["home"], DueDate: new Date("2025-09-08T15:00:00Z") },
+    { Title: "Prepare Mongo lesson", Description: "Slides + code samples", IsDone: true, Priority: 1, Tags: ["teaching", "work"], DueDate: new Date("2025-09-14T10:00:00Z") },
+    { Title: "Call the bank", Description: "Discuss mortgage options", IsDone: false, Priority: 2, Tags: ["finance"], DueDate: new Date("2025-09-09T11:30:00Z") },
+    { Title: "Team meeting", Description: "Sprint planning", IsDone: true, Priority: 1, Tags: ["work", "meeting"], DueDate: new Date("2025-09-11T09:00:00Z") },
+    { Title: "Doctor appointment", Description: "Annual check-up", IsDone: false, Priority: 3, Tags: ["health"], DueDate: new Date("2025-09-15T13:00:00Z") },
+    { Title: "Fix the bike", Description: "Change flat tire", IsDone: false, Priority: 2, Tags: ["home", "repair"], DueDate: new Date("2025-09-07T17:00:00Z") },
+    { Title: "Read MongoDB docs", Description: "Aggregation framework", IsDone: true, Priority: 2, Tags: ["learning"], DueDate: new Date("2025-09-05T20:00:00Z") },
+    { Title: "Birthday gift", Description: "Buy for Sarah", IsDone: false, Priority: 1, Tags: ["family", "shopping"], DueDate: new Date("2025-09-18T10:00:00Z") },
+    { Title: "Gym workout", Description: "Leg day", IsDone: true, Priority: 3, Tags: ["health"], DueDate: new Date("2025-09-06T08:00:00Z") },
+    { Title: "Fix bug #123", Description: "Null reference exception", IsDone: false, Priority: 1, Tags: ["work", "coding"], DueDate: new Date("2025-09-13T09:30:00Z") },
+    { Title: "Plan family trip", Description: "Check hotels in Galilee", IsDone: false, Priority: 2, Tags: ["family"], DueDate: new Date("2025-09-20T18:00:00Z") },
+    { Title: "Pay electricity bill", Description: "Use online banking", IsDone: true, Priority: 1, Tags: ["finance"], DueDate: new Date("2025-09-04T14:00:00Z") },
+    { Title: "Study C# async", Description: "Tasks and await", IsDone: false, Priority: 2, Tags: ["learning"], DueDate: new Date("2025-09-19T21:00:00Z") },
+    { Title: "Laundry", Description: "Wash and fold clothes", IsDone: true, Priority: 3, Tags: ["home"], DueDate: new Date("2025-09-03T16:00:00Z") },
+    { Title: "Dentist", Description: "Fill cavity", IsDone: false, Priority: 1, Tags: ["health"], DueDate: new Date("2025-09-21T12:00:00Z") },
+    { Title: "Refactor service", Description: "Split large class", IsDone: true, Priority: 2, Tags: ["work", "coding"], DueDate: new Date("2025-09-02T10:00:00Z") },
+    { Title: "Book flight", Description: "Business trip to London", IsDone: false, Priority: 1, Tags: ["work", "travel"], DueDate: new Date("2025-09-22T09:00:00Z") },
+    { Title: "Watch AI webinar", Description: "NotebookLM deep dive", IsDone: true, Priority: 2, Tags: ["learning", "AI"], DueDate: new Date("2025-09-01T19:00:00Z") },
+    { Title: "Clean kitchen", Description: "Deep clean fridge", IsDone: false, Priority: 3, Tags: ["home"], DueDate: new Date("2025-09-23T15:00:00Z") },
+    { Title: "School project", Description: "Help kid with science fair", IsDone: true, Priority: 2, Tags: ["family", "school"], DueDate: new Date("2025-09-24T17:00:00Z") },
+    { Title: "Organize bookshelf", Description: "Sort by categories", IsDone: false, Priority: 3, Tags: ["home"], DueDate: new Date("2025-09-25T14:00:00Z") },
+    { Title: "Deploy web API", Description: "Push to production", IsDone: true, Priority: 1, Tags: ["work", "devops"], DueDate: new Date("2025-09-26T11:00:00Z") },
+    { Title: "Meditation", Description: "15 minutes daily", IsDone: false, Priority: 2, Tags: ["health"], DueDate: new Date("2025-09-27T07:30:00Z") }
+]);
